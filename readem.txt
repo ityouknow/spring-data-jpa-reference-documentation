@@ -1,0 +1,6 @@
+echo "# spring-data-jpa-reference-documentation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:ityouknow/spring-data-jpa-reference-documentation.git
+git push -u origin master
