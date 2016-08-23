@@ -1,0 +1,15 @@
+2. New & Noteworthy
+
+2.1. What’s new in Spring Data JPA 1.10
+
+Support for Projections in repository query methods.
+
+Support for Query by Example.
+
+The following annotations have been enabled to build own, composed annotations: @EntityGraph, @Lock,@Modifying, @Query, @QueryHints and @Procedure.
+
+Support for Contains keyword on collection expressions.
+
+AttributeConverters for ZoneId of JSR-310 and ThreeTenBP.
+
+Upgrade to Querydsl 4, Hibernate 5, OpenJPA 2.4 and EclipseLink 2.6.1.
