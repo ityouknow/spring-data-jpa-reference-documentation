@@ -1,12 +1,12 @@
-2. New & Noteworthy
+## 2. 新增功能点
 
-2.1. What’s new in Spring Data JPA 1.10
+### 2.1. Spring Data JPA 1.10的新增功能点
 
-Support for Projections in repository query methods.
+- 支持根据方法名生产查询SQL
 
-Support for Query by Example.
+- 支持通过对象来查询
 
-The following annotations have been enabled to build own, composed annotations: @EntityGraph, @Lock,@Modifying, @Query, @QueryHints and @Procedure.
+- 增加以下注解： @EntityGraph, @Lock,@Modifying, @Query, @QueryHints and @Procedure.
 
 Support for Contains keyword on collection expressions.
 
