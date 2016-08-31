@@ -6,7 +6,7 @@
 
 - 支持通过对象来查询
 
-- 增加以下注解： @EntityGraph, @Lock,@Modifying, @Query, @QueryHints and @Procedure.
+- 增加以下注解：  @EntityGraph , @Lock,@Modifying, @Query, @QueryHints and @Procedure.
 
 Support for Contains keyword on collection expressions.
 
