@@ -1,13 +1,16 @@
-Preface
+# 前言
 
-1. Project metadata
+## 1. 项目信息
 
-Version control - http://github.com/spring-projects/spring-data-jpa
+- 版本控制 - http://github.com/spring-projects/spring-data-jpa
 
-Bugtracker - https://jira.spring.io/browse/DATAJPA
+- bug管理地址 - https://jira.spring.io/browse/DATAJPA
 
-Release repository - https://repo.spring.io/libs-release
+- 发布的libs仓库 - https://repo.spring.io/libs-release
 
-Milestone repository - https://repo.spring.io/libs-milestone
+- 里程碑libs仓库 - https://repo.spring.io/libs-milestone
 
-Snapshot repository - https://repo.spring.io/libs-snapshot
+- 快照仓库 - https://repo.spring.io/libs-snapshot
+
+
+
