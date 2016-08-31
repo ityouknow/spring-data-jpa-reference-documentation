@@ -17,7 +17,7 @@
 </dependencyManagement>
 ```
 
-最新发布的版本是```Hopper-SR2```。名字是按照字母顺序的升序来排列，最新可用的列在[这里](https://github.com/spring-projects/spring-data-commons/wiki/Release-planning)。版本的命名格式为: ```${name}-${release}```发布的可能是下列之一：
+最新发布的版本是```Hopper-SR2```。名字是按照字母顺序的升序来排列，最新可用的列表在[这里](https://github.com/spring-projects/spring-data-commons/wiki/Release-planning)。版本的命名格式为: ```${name}-${release}```发布的可能是下列之一：
 
 - BUILD-SNAPSHOT - 最新的快照
 - M1, M2 etc. - 里程碑
@@ -35,3 +35,10 @@
   </dependency>
 <dependencies>
 ```
+
+### 3.1 使用Spring Boot管理依赖
+Spring boot 已经选择了最新的版本，如果你想更新到最新的版本，非常简单配置属性```spring-data-releasetrain.version``` 选择不同的版本来使用
+
+### 3.2 Spring 框架
+最新的Spring Data模版需要依赖Spring框架4.2.6或者更高，也可以使用旧版中修复了bug的版本，但是还是推荐使用最新的版本。
+
