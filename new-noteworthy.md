@@ -4,7 +4,7 @@
 
 * 支持根据方法名生产查询SQL
 
-* 支持通过对象来查询
+* 支持通过实例来查询
 
 * 增加以下注解：```@EntityGraph```,````@Lock```,```@Modifying```, ```@Query```, ```@QueryHints``` 和 ```@Procedure```
 
