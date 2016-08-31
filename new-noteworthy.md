@@ -6,12 +6,11 @@
 
 * 支持通过对象来查询
 
-* 增加以下注解：```@EntityGraph```, @Lock,@Modifying, @Query, @QueryHints and @Procedure.
+* 增加以下注解：```@EntityGraph```,````@Lock```,```@Modifying```, ```@Query```, ```@QueryHints``` 和 ```@Procedure```
 
+- 支持在集合表达式中包括关键字
 
-Support for Contains keyword on collection expressions.
+- AttributeConverters for ZoneId of JSR-310 and ThreeTenBP.
 
-AttributeConverters for ZoneId of JSR-310 and ThreeTenBP.
-
-Upgrade to Querydsl 4, Hibernate 5, OpenJPA 2.4 and EclipseLink 2.6.1.
+- 升级到Querydsl 4, Hibernate 5, OpenJPA 2.4 and EclipseLink 2.6.1
 
