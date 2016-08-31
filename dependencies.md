@@ -24,3 +24,14 @@
 - RC1, RC2 etc. - 新版本预发布
 - RELEASE - 正式发布的版本
 - SR1, SR2 etc. - 服务版本
+
+这里有一个[spirng data的例子](https://github.com/spring-projects/spring-data-examples/tree/master/bom),如果使用没有版本号的spring data jpa如下：
+
+``` xml
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+  </dependency>
+<dependencies>
+```
