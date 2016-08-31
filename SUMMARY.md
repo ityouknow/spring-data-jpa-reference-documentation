@@ -3,7 +3,7 @@
 * [关于本书](README.md)
 * [介绍](introduce/intro.md)
     * [关于这边指南](introduce/about.md)
-* [前言](preface.md)
-* [新增](new-noteworthy.md)
-* [依赖](dependencies.md)
+* [第一章 前言](preface.md)
+* [第二章 新增及注意点](new-noteworthy.md)
+* [第三章 依赖](dependencies.md)
 
