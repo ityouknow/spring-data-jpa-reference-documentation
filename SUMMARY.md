@@ -6,4 +6,5 @@
 * [第一章 前言](preface.md)
 * [第二章 新增及注意点](new-noteworthy.md)
 * [第三章 项目依赖](dependencies.md)
+* [Spring-Data-Repositories](spring-data-repositories.md)
 
