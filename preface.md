@@ -4,13 +4,13 @@
 
 - 版本控制 - http://github.com/spring-projects/spring-data-jpa
 
-- bug管理地址 - https://jira.spring.io/browse/DATAJPA
+- Bugtracker - https://jira.spring.io/browse/DATAJPA
 
-- 发布的libs仓库 - https://repo.spring.io/libs-release
+- 版本库 - https://repo.spring.io/libs-release
 
-- 里程碑libs仓库 - https://repo.spring.io/libs-milestone
+- 里程碑库 - https://repo.spring.io/libs-milestone
 
-- 快照仓库 - https://repo.spring.io/libs-snapshot
+- 快照存储库 - https://repo.spring.io/libs-snapshot
 
 
 
