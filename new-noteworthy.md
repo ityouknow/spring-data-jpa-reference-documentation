@@ -8,7 +8,7 @@
 
 * 增加以下注解：```@EntityGraph```,````@Lock```,```@Modifying```, ```@Query```, ```@QueryHints``` 和 ```@Procedure```
 
-- 支持在集合表达式中包括关键字
+- 集合表达式支持Contains关键词
 
 - AttributeConverters for ZoneId of JSR-310 and ThreeTenBP.
 
