@@ -19,8 +19,8 @@
 
 最新发布的版本是```Hopper-SR2```。名字是按照字母顺序的升序来排列，最新可用的列在[这里](https://github.com/spring-projects/spring-data-commons/wiki/Release-planning)。版本的命名格式为: ```${name}-${release}```发布的可能是下列之一：
 
-- BUILD-SNAPSHOT - current snapshots
-- M1, M2 etc. - milestones
-- RC1, RC2 etc. - release candidates
-- RELEASE - GA release
-- SR1, SR2 etc. - service releases
+- BUILD-SNAPSHOT - 最新的快照
+- M1, M2 etc. - 里程碑
+- RC1, RC2 etc. - 新版本预发布
+- RELEASE - 正式发布的版本
+- SR1, SR2 etc. - 服务版本
