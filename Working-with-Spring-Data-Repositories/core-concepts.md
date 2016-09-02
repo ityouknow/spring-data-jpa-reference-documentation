@@ -61,11 +61,21 @@ public interface PagingAndSortingRepository<T, ID extends Serializable>
 PagingAndSortingRepository<User, Long> repository = // … get access to a bean Page<User> users = repository.findAll(new PageRequest(1, 20));
 ```
 
-除了查询方法还有，查询并删除或者统计  
-例5 查询并统计
+除了查询方法还有查询并删除或者查询并统计  
 
+例5 查询并统计
 ``` java
 public interface UserRepository extends CrudRepository<User, Long> { 
       Long countByLastname(String lastname); 
 }
 ```
+
+例6 查询并删除
+``` java
+public interface UserRepository extends CrudRepository<User, Long> {
+
+ Long countByLastname(String lastname);
+
+}
+```
+
