@@ -1,7 +1,9 @@
 ##  第四章 使用Spring Data Repositories
 
-Spring Data Repositories的目的是使用很少的少代码来实现各种持久层的数据库访问。
+Spring Data Repositories的目的是使用很少的少代码来实现各种持久层的数据库访问。  
+ Spring的目标数据存储库的抽象是显著减少所需的样板代码来实现各种持久性存储的数据访问层。
 
-> Spring Data Repositories文档和模块
+
+> Spring数据存储库文件和你的module层
 >
-> 本章介绍Spring Data Repositories的核心概念和接口。本章内容来自于Spring Data Repositories的通用模块，通过简单的配置和JPA模块的代码，调整xml的命名空间和类型可以扩展使用到特殊的模块，命名空间的引用会覆盖XML的配置，JPA可以支持Spring data的所有API,Repository的查询关键字回覆盖关键字哭支持的抽象方法。更多详细的信息参考本问达摩克的第一章
+>  本章解释了Spring的核心概念和接口数据存储库。 在本章的信息从Spring数据共享模块。 它使用的配置和代码示例Java Persistence API(JPA)模块。 适应XML名称空间声明和类型扩展到您正在使用的特定模块的等价物。 名称空间引用 涵盖了所有支持XML配置弹簧数据模块支持存储库API, 库查询关键字 涵盖了查询关键词库支持的抽象方法。 的详细信息在您的模块的具体功能,参考本文档模块的一章。
