@@ -7,7 +7,7 @@
 ``` java
 public interface CrudRepository<T, ID extends Serializable>
 
- extends Repository<T, ID> {        - 1
+ extends Repository<T, ID> {        **(1)**
 
  <S extends T> S save(S entity);
 
