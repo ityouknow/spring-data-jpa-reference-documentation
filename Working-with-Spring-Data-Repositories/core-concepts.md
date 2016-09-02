@@ -7,28 +7,28 @@
 ``` java
 public interface CrudRepository<T, ID extends Serializable>
 
- extends Repository<T, ID> {        **(1)**
+ extends Repository<T, ID> {        
 
- <S extends T> S save(S entity);
+ <S extends T> S save(S entity);    (1)
 
- T findOne(ID primaryKey);
+ T findOne(ID primaryKey);          (2)
 
- Iterable<T> findAll();
+ Iterable<T> findAll();             (3)
 
- Long count();
+ Long count();                      (4)
 
- void delete(T entity);
+ void delete(T entity);             (5)
 
- boolean exists(ID primaryKey);
+ boolean exists(ID primaryKey);     (6)
 
  // … more functionality omitted.
 
 }
 
 ```
- 保存指定的泛型的实体。
+(1) 保存指定的泛型的实体。
 
-返回的实体被给定的id。
+(2) 返回的实体被给定的id。
 
 返回所有实体。
 
