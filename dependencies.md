@@ -26,7 +26,9 @@
 - SR1, SR2 etc. - 服务版本
 
 这里有一个[spirng data的例子](https://github.com/spring-projects/spring-data-examples/tree/master/bom),如果使用没有版本号的spring data jpa如下：
+Example 2. Declaring a dependency to a Spring Data module 
 
+例2.声明一个JPA的模块引用
 ``` xml
 <dependencies>
   <dependency>
