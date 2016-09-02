@@ -58,15 +58,17 @@ public interface PagingAndSortingRepository<T, ID extends Serializable>
 进入用户类别的第二页，可以像这样来分页
 
 ``` java
-PagingAndSortingRepository<User, Long> repository = // … get access to a bean Page<User> users = repository.findAll(new PageRequest(1, 20));
+PagingAndSortingRepository<User, Long> repository = // … get access to a bean
+Page<User> users = repository.findAll(new PageRequest(1, 20));
 ```
 
 除了查询方法还有查询并删除或者查询并统计  
 
 例5 查询并统计
 ``` java
-public interface UserRepository extends CrudRepository<User, Long> { 
-      Long countByLastname(String lastname); 
+public interface UserRepository extends CrudRepository<User, Long> {
+
+  Long countByLastname(String lastname);
 }
 ```
 
@@ -74,7 +76,9 @@ public interface UserRepository extends CrudRepository<User, Long> {
 ``` java
 public interface UserRepository extends CrudRepository<User, Long> {
 
- Long countByLastname(String lastname);
+  Long deleteByLastname(String lastname);
+
+  List<User> removeByLastname(String lastname);
 
 }
 ```
