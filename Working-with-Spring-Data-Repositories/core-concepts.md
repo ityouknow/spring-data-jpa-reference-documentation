@@ -65,5 +65,7 @@ PagingAndSortingRepository<User, Long> repository = // … get access to a bean 
 例5 查询并统计
 
 ``` java
-public interface UserRepository extends CrudRepository<User, Long> { Long countByLastname(String lastname); }
+public interface UserRepository extends CrudRepository<User, Long> { 
+      Long countByLastname(String lastname); 
+}
 ```
