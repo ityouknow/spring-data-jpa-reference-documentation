@@ -41,7 +41,7 @@ public interface CrudRepository<T, ID extends Serializable>
 
 >我们还提供持久性特定于技术的抽象如: ```JpaRepository ```或 ```MongoRepository```. 这些接口继承于```CrudRepository```，实现了特定的一些功能
 
-```CrudRepository```有一个```PagingAndSortingRepository```抽象,增加了额外的方法来缓解分页的访问实体:
+```CrudRepository```有一个```PagingAndSortingRepository``` 抽象,增加了额外的方法来缓解分页的访问实体:
 
 例4： PagingAndSortingRepository
 
