@@ -43,7 +43,6 @@ public interface CrudRepository<T, ID extends Serializable>
 
 ```CrudRepository```有一个```PagingAndSortingRepository```抽象,增加了额外的方法来缓解分页的访问实体:
 
-
 例4： PagingAndSortingRepository
 
 ``` java
