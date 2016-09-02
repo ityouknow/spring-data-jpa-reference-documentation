@@ -7,4 +7,5 @@
 * [第二章 新增及注意点](new-noteworthy.md)
 * [第三章 项目依赖](dependencies.md)
 * [第四章 使用Spring Data Repositories](spring-data-repositories.md)
+    * [core-concepts](core-concepts.md)
 
