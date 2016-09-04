@@ -52,7 +52,18 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 例9. 使用一般的接口定义Repository
 ``` java
+interface AmbiguousRepository extends Repository<User, Long> {
+ …
+}
 
+@NoRepositoryBean
+interface MyBaseRepository<T, ID extends Serializable> extends CrudRepository<T, ID> {
+  …
+}
+
+interface AmbiguousUserRepository extends MyBaseRepository<User, Long> {
+  …
+}
 ```
 
 
