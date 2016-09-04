@@ -29,7 +29,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 #### 4.3.2. 使用Spring Data多模块来创建Repositories 
 
-使用唯一的Spring Data模块在应用中是非常简单
+使用唯一的Spring Data模块在应用中是非常简单，但有时候我们需要多的Spring Data模块
 
 
 
