@@ -20,4 +20,5 @@ interface MyBaseRepository<T, ID extends Serializable> extends Repository<T, ID>
 interface UserRepository extends MyBaseRepository<User, Long> {
   User findByEmailAddress(EmailAddress emailAddress);
 }
-```
+``` 
+第一步你定义了一个公共基础的接口提供了
