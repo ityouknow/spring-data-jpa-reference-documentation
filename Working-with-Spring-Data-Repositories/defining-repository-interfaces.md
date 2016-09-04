@@ -36,7 +36,9 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 2、如果实体注解了一个特殊的声明，它是一个特殊的spring Data模块，spring Data模块接收第三方的声明（例如：JPA's ```@Entity```）或者提供来自 Spring Data MonggoDB/Spring Data Elasticsearch的 ```@Document``` 。
 
 例8. 自定义特殊的Repostity
+``` java
 
+```
 
 
 
