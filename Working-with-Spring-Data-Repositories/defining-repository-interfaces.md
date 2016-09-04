@@ -33,7 +33,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 1、如果 repository 定义继承JpaRepository，他是一个特殊的Spring Data模块
 
-2、如果实体注解了一个
+2、如果实体注解了一个特殊的声明，
 
 
 
