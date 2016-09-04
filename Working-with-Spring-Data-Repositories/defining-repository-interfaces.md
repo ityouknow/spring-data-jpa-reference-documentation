@@ -22,4 +22,4 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 }
 ``` 
 
-第一步你定义了一个公共基础的接口提供了```findOne(…)```和```save(...)```方法,这些方法将会已入到你选择的spring Data的实现类中，例如JPA：```SimpleJpaRepository```,因为他们匹配
+第一步你定义了一个公共基础的接口提供了```findOne(…)```和```save(...)```方法,这些方法将会引入到你选择的spring Data的实现类中，例如JPA：```SimpleJpaRepository```,因为他们匹配```CrudRepository```的方法签名，所以```UserRepository```将会具备 save Users的功能和```findOne(…)```的功能，当然也具备findByEmailAddress的功能。
