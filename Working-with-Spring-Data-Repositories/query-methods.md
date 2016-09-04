@@ -9,7 +9,9 @@ interface PersonRepository extends Repository<User, Long> { … }
 
 2、接口上新建条件查询的方法。
 ``` java
-interface PersonRepository extends Repository<User, Long> { List<Person> findByLastname(String lastname); }
+interface PersonRepository extends Repository<Person, Long> {
+  List<Person> findByLastname(String lastname);
+}
 ```
 
 
