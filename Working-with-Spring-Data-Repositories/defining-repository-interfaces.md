@@ -65,7 +65,7 @@ interface AmbiguousUserRepository extends MyBaseRepository<User, Long> {
   …
 }
 ```
-````AmbiguousRepository```和```AmbiguousUserRepository``` 仅继承于```Repository```
+````AmbiguousRepository```和```AmbiguousUserRepository``` 仅继承于```Repository```和```CrudRepostory``` 
 
 
 
