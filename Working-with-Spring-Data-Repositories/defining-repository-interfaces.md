@@ -8,3 +8,4 @@
 > 这允许您定义自己的抽象上的弹性提供数据存储库的功能。
 
 例7.有选择地公开CRUD方法
+``` javainterface PersonRepository extends Repository<Person, Long> {  List<Person> findByLastname(String lastname);}```
