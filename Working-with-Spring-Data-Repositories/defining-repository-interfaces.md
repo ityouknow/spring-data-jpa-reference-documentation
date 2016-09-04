@@ -37,7 +37,16 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 例8. 自定义特殊的Repostity
 ``` java
+interface MyRepository extends JpaRepository<User, Long> { }
 
+@NoRepositoryBean
+interface MyBaseRepository<T, ID extends Serializable> extends JpaRepository<T, ID> {
+  …
+}
+
+interface UserRepository extends MyBaseRepository<User, Long> {
+  …
+}
 ```
 
 
