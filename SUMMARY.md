@@ -9,5 +9,5 @@
 * [第四章 使用Spring Data Repositories](spring-data-repositories.md)
     * [4.1 核心概念](Working-with-Spring-Data-Repositories/core-concepts.md)
     * [4.2 查询方法](Working-with-Spring-Data-Repositories/query-methods.md)
-* Defining-repositoryinterfaces
+* Defining-repository-interfaces
 
