@@ -20,3 +20,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 class Config {}
 ```
 或者xml配置
+``` xml
+```
