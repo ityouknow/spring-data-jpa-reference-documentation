@@ -50,7 +50,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 ```
 ```MyRepository``` and  ```UserRepository``` 继承于 ``` JpaRepository```在这个层级中是对Spring Data JPA 模块的合法替代
 
-例9. 
+例9. 使用一般的接口定义Repository
 
 
 
