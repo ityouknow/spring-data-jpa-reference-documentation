@@ -65,6 +65,7 @@ interface AmbiguousUserRepository extends MyBaseRepository<User, Long> {
   …
 }
 ```
+````AmbiguousRepository```
 
 
 
