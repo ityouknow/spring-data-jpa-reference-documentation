@@ -48,6 +48,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
   …
 }
 ```
+```MyRepository``` and  ```UserRepository``` 继承于 ``` JpaRepository``` 
 
 
 
