@@ -31,3 +31,28 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
