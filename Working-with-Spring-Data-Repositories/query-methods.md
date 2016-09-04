@@ -6,12 +6,17 @@
 ``` java
 interface PersonRepository extends Repository<User, Long> { … }
 ```
-
 2、接口上新建条件查询的方法。
 ``` java
 interface PersonRepository extends Repository<Person, Long> {
   List<Person> findByLastname(String lastname);
 }
 ```
+3、为这些接口创建代理实例，可以通过 JavaConfig :
+``` java
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+@EnableJpaRepositories
+class Config {}
+```
 
