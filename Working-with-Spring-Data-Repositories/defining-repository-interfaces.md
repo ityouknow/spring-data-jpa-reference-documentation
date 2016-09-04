@@ -9,5 +9,15 @@
 
 例7.有选择地公开CRUD方法
 ``` java
-interface PersonRepository extends Repository<Person, Long> {  List<Person> findByLastname(String lastname);}
+@NoRepositoryBean
+interface MyBaseRepository<T, ID extends Serializable> extends Repository<T, ID> {
+
+  T findOne(ID id);
+
+  T save(T entity);
+}
+
+interface UserRepository extends MyBaseRepository<User, Long> {
+  User findByEmailAddress(EmailAddress emailAddress);
+}
 ```
