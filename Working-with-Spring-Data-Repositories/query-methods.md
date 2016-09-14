@@ -38,7 +38,7 @@ class Config {}
 ```
 在本例中使用的JPA名称空间。如果您正在使用repository中的抽象为任何其他数据源,你需要改变这种适当的名称空间声明你的存储模块来与jpa支持,例如:mongodb。 
 
-Also, note that the JavaConfig variant doesn’t configure a package explictly as the package of the annotated class is used by default. To customize the package to scan use one of the basePackage… attribute of the data-store specific repository @Enable…-annotation.
+注意，不用通过Java变量来配置包，默认情况下回根据注解的类来自动声明。定制的包扫描可以使用```basePackage```属性，特定的库可以使用```@Enable```来注解。
 
 4、获得repository 实例注入并使用它。
 ``` java
