@@ -36,7 +36,7 @@ class Config {}
 
 </beans>
 ```
-在本例中使用的JPA名称空间。如果您正在使用repository中的抽象为任何其他数据源,你需要改变这种适当的名称空间声明你的存储模块来与jpa支持,例如,mongodb。 
+在本例中使用的JPA名称空间。如果您正在使用repository中的抽象为任何其他数据源,你需要改变这种适当的名称空间声明你的存储模块来与jpa支持,例如:mongodb。 
 
 Also, note that the JavaConfig variant doesn’t configure a package explictly as the package of the annotated class is used by default. To customize the package to scan use one of the basePackage… attribute of the data-store specific repository @Enable…-annotation.
 
