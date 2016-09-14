@@ -71,8 +71,30 @@ interface AmbiguousUserRepository extends MyBaseRepository<User, Long> {
 ```
 ```AmbiguousRepository``和`AmbiguousUserRepository` 仅继承于`Repository`和`CrudRepostory`在他们的层级。当它们使用一个spring data模块的时候是完美的，但是如果使用多模块spring data 是，spirng 无法区分每个Repository的范围。
 
+例10. 使用实体类注解来定义Repository的使用范围
 
+```java
+interface PersonRepository extends Repository<Person, Long> {
+ …
+}
 
+@Entity
+public class Person {
+  …
+}
+
+interface UserRepository extends Repository<User, Long> {
+ …
+}
+
+@Document
+public class User {
+  …
+}
+```
+PersonRepository references Person which is annotated with the JPA annotation @Entity so this repository clearly belongs to Spring Data JPA. UserRepository uses User annotated with Spring Data MongoDB’s @Document annotation.
+
+ ```Person```使用了```@Entity``` 注解```PersonRepository```引用了它，所以这个仓库清晰的使用了Sping Data JPA. ```UserRepository```引用的```User``` 声明了```@Document```表面这个仓库将使用Spring Data MongoDB 模块。
 
 
 
