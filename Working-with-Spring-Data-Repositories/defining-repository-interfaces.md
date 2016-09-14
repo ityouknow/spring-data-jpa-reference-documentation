@@ -92,7 +92,6 @@ public class User {
   …
 }
 ```
-PersonRepository references Person which is annotated with the JPA annotation @Entity so this repository clearly belongs to Spring Data JPA. UserRepository uses User annotated with Spring Data MongoDB’s @Document annotation.
 
  ```Person```使用了```@Entity``` 注解```PersonRepository```引用了它，所以这个仓库清晰的使用了Sping Data JPA。 ```UserRepository```引用的```User``` 声明了```@Document```表面这个仓库将使用Spring Data MongoDB 模块。
 
