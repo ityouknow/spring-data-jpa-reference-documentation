@@ -117,6 +117,7 @@ public class Person {
 通过Repository继承或者使用注解都是为了确定使用那个Spring Data模块。使用多个注解到同一个实体来达到多类型的持久化技术，Spring Data不在限制只能绑定到一个Repostitory中。 
 
 最后一种方法来区分不同的仓库类型，使用包路径来判断。不同的包路径下的仓库使用不同的仓库类型，通过在配置类```configuration```中声明注解来实现，也可以通过xml配置来定义。
+
 例12： 通过注解来实现不同包路径，使用不同的仓库
 ```java
 @EnableJpaRepositories(basePackages = "com.acme.repositories.jpa")
