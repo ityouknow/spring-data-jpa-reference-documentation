@@ -112,7 +112,6 @@ public class Person {
   …
 }
 ```
-This example shows a domain class using both JPA and Spring Data MongoDB annotations. It defines two repositories, JpaPersonRepository and MongoDBPersonRepository. One is intended for JPA and the other for MongoDB usage. Spring Data is no longer able to tell the repositories apart which leads to undefined behavior. 
 
 这个例子中实体类```Person···使用了两种注解，表明这个实体类既可以用于```JpaPersonRepository```也可以用于```MongoDBPersonRepository ```，Spring Data不能确定仓库类型导致未定义的行为。
 
