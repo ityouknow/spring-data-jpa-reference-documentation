@@ -96,7 +96,22 @@ PersonRepository references Person which is annotated with the JPA annotation @E
 
  ```Person```使用了```@Entity``` 注解```PersonRepository```引用了它，所以这个仓库清晰的使用了Sping Data JPA。 ```UserRepository```引用的```User``` 声明了```@Document```表面这个仓库将使用Spring Data MongoDB 模块。
 
+例11. 使用混合的注解来定义仓库
+```java
+interface JpaPersonRepository extends Repository<Person, Long> {
+ …
+}
 
+interface MongoDBPersonRepository extends Repository<Person, Long> {
+ …
+}
+
+@Entity
+@Document
+public class Person {
+  …
+}
+```
 
 
 
