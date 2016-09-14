@@ -69,8 +69,6 @@ interface AmbiguousUserRepository extends MyBaseRepository<User, Long> {
   …
 }
 ```
-AmbiguousRepository and AmbiguousUserRepository extend only Repository and CrudRepository in their type hierarchy. While this is perfectly fine using a unique Spring Data module, multiple modules cannot distinguish to which particular Spring Data these repositories should be bound. 
-
 ```AmbiguousRepository``和`AmbiguousUserRepository` 仅继承于`Repository`和`CrudRepostory`在他们的层级。当它们使用一个spring data模块的时候是完美的，但是如果使用多模块spring data 是，spirng 无法区分每个Repository的范围。
 
 
