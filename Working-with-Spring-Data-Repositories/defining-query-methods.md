@@ -53,7 +53,12 @@ public interface PersonRepository extends Repository<User, Long> {
 List<Person> findByAddressZipCode(ZipCode zipCode);
 ```
 
+创建属性遍历 x.address.zipCode 。方法执行首先解释整个部分( AddressZipCode )作为财产和检查的域类属性的名称(小写形式)。 分割源在驼峰式大小写部分从右侧头部和尾巴,试图找到对应的属性,在我们的例子中,分割为 AddressZip 和 Code 。 分裂不匹配,该算法分割点移动到左( Address , Zipcode
 
+您可以使用来解决这种模糊性 _ 在方法名来手动定义遍历点。 所以我们的方法名称最终将像这样:
+
+List<Person> findByAddress_ZipCode(ZipCode zipCode);
+如果你的属性名称包含下划线(如。 first_name 中下划线),你可以逃脱的方法名与第二个下划线。 对于一个 first_name 属性查询方法必须命名 findByFirst__name(¢¬¦) 。
 
 
 
