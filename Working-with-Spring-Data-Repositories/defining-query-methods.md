@@ -166,7 +166,7 @@ ListenableFuture<User> findOneByLastname(String lastname);      (3)
 ```
 
 
-- 1. Use java.util.concurrent.Future as return type.
+- 1. 使用 ```java.util.concurrent.Future``` 作为返回结果
 
 - 2. Use a Java 8 java.util.concurrent.CompletableFuture as return type.
 
