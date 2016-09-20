@@ -37,7 +37,11 @@ public interface PersonRepository extends Repository<User, Long> {
 }
 ```
 
+实际结果的解析方法取决于你的持久性存储创建查询。-然而,也有一些一般要注意的事情。
 
+- 遍历表达式通常结合运算符连接。您可以把表达式 And 和 Or ,Between , LessThan(不超过) , GreaterThan , Like 等运算符
+
+您可以应用静态排序通过附加一个 为基准进行排序 子句的查询方法,引用属性和方向提供了一个排序( asc 或 Desc )。 创建一个支持动态排序的查询方法,明白了 特殊参数处理 。
 
 
 
