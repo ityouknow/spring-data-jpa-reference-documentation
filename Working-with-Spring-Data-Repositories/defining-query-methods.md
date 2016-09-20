@@ -69,6 +69,10 @@ List<Person> findByAddress_ZipCode(ZipCode zipCode);
 
 例 14. 使用 ```Pageable```, ```Slice``` 和 ```Sort```来查询
 
+``` java
+
+```
+
 
 
 
