@@ -10,5 +10,5 @@
     * [4.1 核心概念](Working-with-Spring-Data-Repositories/core-concepts.md)
     * [4.2 查询方法](Working-with-Spring-Data-Repositories/query-methods.md)
     * [4.3 定义repository的接口](Working-with-Spring-Data-Repositories/defining-repository-interfaces.md)
-    * [4.4 Defining-query-methods](44-defining-query-methods.md)
+    * [4.4 定义查询方法](Working-with-Spring-Data-Repositories/defining-query-methods.md)
 
