@@ -113,7 +113,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 如果分页或者切片被应用到一个限制查询分页(计算多少页可用)则它也能应用于限制结果。
 
->
+> 要注意结合通过Sort参数动态排序的限制结果容许表达查询的方法为“K”最小的，以及“K”最大的元素。
 
 
 
