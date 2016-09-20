@@ -137,7 +137,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 > 一个数据流可能包裹底层数据存储特定资源，因此在使用后必须关闭。 你也可以使用close()方法或者JAVA 7 try-with-resources区块手动关闭数据流。
 
-示例12.在try-with-resources块中操作一个Stream<T>
+例17 在try-with-resources块中操作一个Stream<T>
 
 ```java
 
