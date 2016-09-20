@@ -47,6 +47,7 @@ public interface PersonRepository extends Repository<User, Long> {
 
 #### 4.4.3. 属性表达式
 
+属性表达式只能引用的直接财产管理的实体,如前面的示例所示。 在创建查询时你已经确保解析房地产管理的域类的一个属性。 然而,您还可以定义约束通过遍历嵌套属性。 假设一个```Person```有一个```Address```与一个```Zipcode```。 在这种情况下一个方法的名称
 
 
 
