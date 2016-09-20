@@ -3,5 +3,5 @@ repository 代理有两种方法去查询。一种是根据方法名或者自定
 
 #### 4.4.1. 查询查找策略
 
-以下策略可供查询库基础设施来解决。 您可以配置策略名称空间通过 ```query-lookup-strategy```属性的XML配置或通过```queryLookupStrategy```启用的属性```${store}```库注释的Java配置。 一些策略可能不支持特定的数据存储。
+以下策略可供查询库基础设施来解决。您可以配置策略名称空间通过 ```query-lookup-strategy```属性的XML配置或通过```queryLookupStrategy```启用的属性```${store}```库注释的Java配置。一些策略可能不支持特定的数据存储。
 
