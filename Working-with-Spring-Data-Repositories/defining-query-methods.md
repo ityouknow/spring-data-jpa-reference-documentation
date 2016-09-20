@@ -166,6 +166,9 @@ ListenableFuture<User> findOneByLastname(String lastname);      (3)
 ```
 
 
+- 1. Use java.util.concurrent.Future as return type.
+Use a Java 8 java.util.concurrent.CompletableFuture as return type.
+Use a org.springframework.util.concurrent.ListenableFuture as return type.
 
 
 
