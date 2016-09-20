@@ -57,7 +57,7 @@ List<Person> findByAddressZipCode(ZipCode zipCode);
 
 在大多数情况下，这种算法有可能会出现错误，您可以使用来解决这种模糊性 _ 在方法名来手动定义遍历点。所以我们的方法名称最终将像这样:
 
-```` java
+``` java
 List<Person> findByAddress_ZipCode(ZipCode zipCode);
 ```
 
