@@ -43,7 +43,7 @@ public interface PersonRepository extends Repository<User, Long> {
 
 The method parser supports setting an IgnoreCase flag for individual properties (for example, findByLastnameIgnoreCase(…)) or for all properties of a type that support ignoring case (usually String instances, for example, findByLastnameAndFirstnameAllIgnoreCase(…)). Whether ignoring cases is supported may vary by store, so consult the relevant sections in the reference documentation for the store-specific query method.
 
-- 
+- 方法解析支持设置```IgnoreCase```在属性上面（如，```findByLastnameIgnoreCase(…)```
 
 - 您可以应用静态排序通过附加一个 为基准进行排序 子句的查询方法,引用属性和方向提供了一个排序( asc 或 Desc )。 创建一个支持动态排序的查询方法,明白了 特殊参数处理 。
 
