@@ -67,7 +67,7 @@ List<Person> findByAddress_ZipCode(ZipCode zipCode);
 
 处理参数查询只需方法参数定义为已经在上面的例子中。 除了基础查询将会认识到某些特定类型```Pageable```和```Sort```应用动态查询分页和排序
 
-
+例 14. 使用 ```Pageable```, Slice and Sort in query methods
 
 
 
