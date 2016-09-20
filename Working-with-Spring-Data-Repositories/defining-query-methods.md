@@ -154,7 +154,17 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 #### 4.4.7. 异步查询结果
 
+```java
 
+@Async
+Future<User> findByFirstname(String firstname);               
+
+@Async
+CompletableFuture<User> findOneByFirstname(String firstname); 
+
+@Async
+ListenableFuture<User> findOneByLastname(String lastname);    
+```
 
 
 
