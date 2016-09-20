@@ -70,7 +70,13 @@ List<Person> findByAddress_ZipCode(ZipCode zipCode);
 例 14. 使用 ```Pageable```, ```Slice``` 和 ```Sort```来查询
 
 ``` java
+Page<User> findByLastname(String lastname, Pageable pageable);
 
+Slice<User> findByLastname(String lastname, Pageable pageable);
+
+List<User> findByLastname(String lastname, Sort sort);
+
+List<User> findByLastname(String lastname, Pageable pageable);
 ```
 
 
