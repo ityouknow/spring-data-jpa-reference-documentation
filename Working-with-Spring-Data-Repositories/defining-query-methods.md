@@ -117,7 +117,9 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 #### 4.4.6. 流查询结果
 
+查询方法能对以JAVA 8的Stream为返回的结果进行逐步处理。而不是简单地包装查询结果在被用来执行流的流数据存储特定的方法。
 
+例16 以JAVA 8的Stream来进行查询的流处理结果
 
 
 
