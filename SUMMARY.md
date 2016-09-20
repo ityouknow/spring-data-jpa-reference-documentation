@@ -11,4 +11,5 @@
     * [4.2 查询方法](Working-with-Spring-Data-Repositories/query-methods.md)
     * [4.3 定义repository的接口](Working-with-Spring-Data-Repositories/defining-repository-interfaces.md)
     * [4.4 定义查询方法](Working-with-Spring-Data-Repositories/defining-query-methods.md)
+    * [4.5. 创建repository实例](Working-with-Spring-Data-Repositories/creating-repository-instances.md)
 
