@@ -15,7 +15,7 @@ repository 代理有两种方法去查询。一种是根据方法名或者自定
 
 query builder机制内置为构建约束查询库的实体。 带前缀的机制```findXXBy```,```readAXXBy```,```queryXXBy```,```countXXBy```, ```getXXBy```自动解析的其余部分。进一步引入子句可以包含表达式等```Distinct```设置不同的条件创建查询。 然而,第一个```By```作为分隔符来表示实际的标准的开始。 在一个非常基础的查询,可以定义条件```And```或者```Or```。
 
-例 13. Query creation from method names 
+例 13. 根据方法名创建查询
 
 
 
