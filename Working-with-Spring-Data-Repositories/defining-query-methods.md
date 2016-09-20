@@ -63,7 +63,7 @@ List<Person> findByAddress_ZipCode(ZipCode zipCode);
 
 如果你的属性名称包含下划线(如。 first_name 中下划线),建议使用驼峰的方式来避免。
 
-#### 4.4.4
+#### 4.4.4 特殊参数处理
 
 
 
