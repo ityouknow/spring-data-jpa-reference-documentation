@@ -109,7 +109,11 @@ List<User> findByLastname(String lastname, Pageable pageable);
      List<User> findTop10ByLastname(String lastname, Pageable pageable);
 ```
 
+限制表达式也支持Distinct关键字。对于限制查询的结果集定义到一个实例中包装这个结果到一个Optional中也是被支持的。
 
+如果分页或者切片被应用到一个限制查询分页(计算多少页可用)则它也能应用于限制结果。
+
+>
 
 
 
