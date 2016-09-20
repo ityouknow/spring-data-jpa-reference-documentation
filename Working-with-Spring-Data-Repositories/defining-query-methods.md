@@ -45,7 +45,7 @@ The method parser supports setting an IgnoreCase flag for individual properties 
 
 - 方法解析支持设置```IgnoreCase```在属性上面（如，```findByLastnameIgnoreCase(…)```),或者支持查询所有属性忽略大小写（如，```findByLastnameAndFirstnameAllIgnoreCase(…)```), 忽略大小写支持所有的数据库，其它的查询参考相关文档
 
-- 您可以应用静态排序通过附加一个```OrderBy```基准进行排序 子句的查询方法,引用属性和方向提供了一个排序(```asc```或 ```Desc```)。 创建一个支持动态排序的查询方法,明白了 特殊参数处理 。
+- 您可以应用静态排序通过附加一个```OrderBy```基准进行排序 子句的查询方法,引用属性和方向提供了一个排序(```asc```或 ```Desc```)。 创建一个支持动态排序的查询方法,明白了特殊参数处理 。
 
 
 
