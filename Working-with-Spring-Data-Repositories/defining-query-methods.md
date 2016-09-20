@@ -165,7 +165,6 @@ CompletableFuture<User> findOneByFirstname(String firstname);  (2)
 ListenableFuture<User> findOneByLastname(String lastname);      (3) 
 ```
 
-
 - 1. 使用 ```java.util.concurrent.Future``` 作为返回类型
 
 - 2. 使用  ```Java 8``` ```java.util.concurrent.CompletableFuture``` 作为返回类型
