@@ -159,10 +159,10 @@ List<User> findByLastname(String lastname, Pageable pageable);
 Future<User> findByFirstname(String firstname);               (1)  
 
 @Async
-CompletableFuture<User> findOneByFirstname(String firstname); 
+CompletableFuture<User> findOneByFirstname(String firstname);  (2)
 
 @Async
-ListenableFuture<User> findOneByLastname(String lastname);    
+ListenableFuture<User> findOneByLastname(String lastname);      (3) 
 ```
 
 
