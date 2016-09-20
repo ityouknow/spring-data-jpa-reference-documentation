@@ -156,7 +156,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 ```java
 @Async
-Future<User> findByFirstname(String firstname);               
+Future<User> findByFirstname(String firstname);               (1)  
 
 @Async
 CompletableFuture<User> findOneByFirstname(String firstname); 
