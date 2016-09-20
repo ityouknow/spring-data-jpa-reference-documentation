@@ -91,6 +91,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 #### 4.4.5. 限制查询结果
 
+查询方法的结果可以通过关键字first或者top来限制,它们可以交替使用。在top/firest后添加数字来表示返回最大的结果数。如果没有数字，则默认假定1作为结果大小。 
 
 
 
