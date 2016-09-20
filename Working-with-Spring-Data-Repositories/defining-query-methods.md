@@ -96,7 +96,17 @@ List<User> findByLastname(String lastname, Pageable pageable);
 示例15 用```Top```和```First```查询限制结果大小 
 
 ``` java
+     User findFirstByOrderByLastnameAsc();
 
+     User findTopByOrderByAgeDesc();
+
+     Page<User> queryFirst10ByLastname(String lastname, Pageable pageable);
+
+     Slice<User> findTop3ByLastname(String lastname, Pageable pageable);
+
+     List<User> findFirst10ByLastname(String lastname, Sort sort);
+
+     List<User> findTop10ByLastname(String lastname, Pageable pageable);
 ```
 
 
