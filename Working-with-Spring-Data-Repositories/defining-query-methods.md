@@ -121,6 +121,35 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 例16 以JAVA 8的Stream来进行查询的流处理结果
 
+```java
+
+ @Query("select u from User u")
+
+ Stream<User> findAllByCustomQueryAndStream();
+
+ Stream<User> readAllByFirstnameNotNull();
+
+ @Query("select u from User u")
+
+ Stream<User> streamAllPaged(Pageable pageable);
+
+```
+
+> 一个数据流可能包裹底层数据存储特定资源，因此在使用后必须关闭。 你也可以使用close()方法或者JAVA 7 try-with-resources区块手动关闭数据流。
+
+示例12.在try-with-resources块中操作一个Stream<T>
+
+```java
+
+ try(Stream<User stream = repository.findAllByCustomQueryAndStream()){
+
+ stream.forEach(...);
+
+ }
+
+```
+
+> 当前不是所有的Spring Data模块都支持Stream<T>作为返回类型
 
 
 
