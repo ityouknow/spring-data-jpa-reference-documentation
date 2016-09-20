@@ -168,9 +168,9 @@ ListenableFuture<User> findOneByLastname(String lastname);      (3)
 
 - 1. 使用 ```java.util.concurrent.Future``` 作为返回结果
 
-- 2. Use a Java 8 java.util.concurrent.CompletableFuture as return type.
+- 2. 使用  ```Java 8``` ```java.util.concurrent.CompletableFuture``` 作为返回结果
 
-- 3. Use a org.springframework.util.concurrent.ListenableFuture as return type.
+- 3. 使用  ```org.springframework.util.concurrent.ListenableFuture``` 作为返回结果
 
 
 
