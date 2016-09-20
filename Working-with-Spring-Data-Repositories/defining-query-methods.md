@@ -115,7 +115,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 
 > 要注意结合通过Sort参数动态排序的限制结果容许表达查询的方法为“K”最小的，以及“K”最大的元素。
 
-#### 4.4.6. 限制查询结果
+#### 4.4.6. 流查询结果
 
 
 
