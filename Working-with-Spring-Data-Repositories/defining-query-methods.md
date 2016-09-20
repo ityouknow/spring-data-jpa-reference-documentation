@@ -162,7 +162,7 @@ Future<User> findByFirstname(String firstname);               (1)
 CompletableFuture<User> findOneByFirstname(String firstname);  (2)
 
 @Async
-ListenableFuture<User> findOneByLastname(String lastname);      (3) 
+ListenableFuture<User> findOneByLastname(String lastname);     (3) 
 ```
 
 - (1) 使用 ```java.util.concurrent.Future``` 作为返回类型
