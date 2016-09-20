@@ -152,7 +152,7 @@ List<User> findByLastname(String lastname, Pageable pageable);
 > 当前不是所有的Spring Data模块都支持Stream<T>作为返回类型
 
 
-#### 4.4.7. Async query results
+#### 4.4.7. 异步查询结果
 
 
 
