@@ -22,7 +22,7 @@
 
 * 优化分页查询
 
-* 支持在查询衍生中使用`exists`
+* 支持在查询衍生中使用`exists projection`
 
 
 
