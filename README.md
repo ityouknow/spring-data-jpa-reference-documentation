@@ -1,6 +1,6 @@
 # Spring Data JPA 参考指南 中文版
 
-### [阅读地址](https://ityouknow.gitbooks.io/spring-data-jpa-reference-documentation)
+### [阅读地址](https://www.gitbook.com/book/ityouknow/spring-data-jpa-reference-documentation/details)
 
 * Spring Data JPA 参考指南 目前正在翻译当中, 为了方便理解, 我们也会加入自己的观点和例子, 并不会完全照搬翻译, 希望大家理解也欢迎大家一起加入和完善
 
