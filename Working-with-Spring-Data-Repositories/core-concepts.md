@@ -1,10 +1,10 @@
 ### 4.1核心概念
 
-在Spring Data 接口 Repository 需要domain 以及id类型域类的类型参数。 这个接口行为主要是一个标记接口获取类型一起工作,并帮助您发现接口,扩展这一个 CrudRepository 提供复杂的CRUD功能的实体类进行管理。 
+Spring Data库的核心接口是`Repository`。它使用domain类去管理，domain类中的id类型作为类型参数。这个接口主要作为一个标记接口，依靠具体的类型运作并帮助您发现接口，`CrudRepository` 提供丰富的CRUD功能去管理实体类。
 
 例 3. CrudRepository 接口
 
-``` java
+```java
 public interface CrudRepository<T, ID extends Serializable>
 
  extends Repository<T, ID> {        
@@ -24,28 +24,27 @@ public interface CrudRepository<T, ID extends Serializable>
  // … more functionality omitted.
 
 }
-
 ```
-(1) 保存指定的泛型的实体。
 
-(2) 返回的实体被给定的id。
+\(1\) 保存指定的泛型的实体。
 
-(3) 返回所有实体。
+\(2\) 返回的实体被给定的id。
 
-(4) 返回的实体的数量。
+\(3\) 返回所有实体。
 
-(5) 删除给定的实体。
+\(4\) 返回的实体的数量。
 
-(6) 表示一个实体是否与给定id的存在。
+\(5\) 删除给定的实体。
 
+\(6\) 表示一个实体是否与给定id的存在。
 
->我们还提供持久性特定于技术的抽象如: ```JpaRepository ```或 ```MongoRepository```. 这些接口继承于```CrudRepository```，实现了特定的一些功能
+> 我们还提供持久性特定于技术的抽象如: `JpaRepository`或 `MongoRepository`. 这些接口继承于`CrudRepository`，实现了特定的一些功能
 
-```CrudRepository```有一个```PagingAndSortingRepository``` 抽象,增加了额外的方法来缓解分页的访问实体:
+`CrudRepository`有一个`PagingAndSortingRepository` 抽象,增加了额外的方法来缓解分页的访问实体:
 
 例4： PagingAndSortingRepository
 
-``` java
+```java
 public interface PagingAndSortingRepository<T, ID extends Serializable>
   extends CrudRepository<T, ID> {
 
@@ -57,15 +56,16 @@ public interface PagingAndSortingRepository<T, ID extends Serializable>
 
 进入用户类别的第二页，可以像这样来分页
 
-``` java
+```java
 PagingAndSortingRepository<User, Long> repository = // … get access to a bean
 Page<User> users = repository.findAll(new PageRequest(1, 20));
 ```
 
-除了查询方法还有查询并删除或者查询并统计  
+除了查询方法还有查询并删除或者查询并统计
 
 例5 查询并统计
-``` java
+
+```java
 public interface UserRepository extends CrudRepository<User, Long> {
 
   Long countByLastname(String lastname);
@@ -73,7 +73,8 @@ public interface UserRepository extends CrudRepository<User, Long> {
 ```
 
 例6 查询并删除
-``` java
+
+```java
 public interface UserRepository extends CrudRepository<User, Long> {
 
   Long deleteByLastname(String lastname);
@@ -82,4 +83,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
 }
 ```
+
+
 
