@@ -32,7 +32,7 @@
 
 我们可以在[spring data using bom](https://github.com/spring-projects/spring-data-examples/tree/master/bom)这个链接中查看如何使用BOM模版。
 
-同样，你也可以声明一个对JPA的模块引用，该模块引用不需要版本号，如下。
+此时，你在对JPA的模块引用中不需要添加版本号，如下。
 
 例2.声明一个JPA的模块引用
 
