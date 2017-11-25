@@ -10,11 +10,11 @@
 
 * [原文地址](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
 
-* 我们会开放权限给每一个加入的伙伴 (翻译或者校对)，请提前邮箱联系 ityouknow@126.com
+* 我们会开放权限给每一个加入的伙伴 \(翻译或者校对\)，请提前邮箱联系 ityouknow@126.com
 
 * 建议使用[GitBook Edito](https://www.gitbook.com/editor)编辑
 
-----
+---
 
 ### 如何参与
 
@@ -26,14 +26,15 @@ Gitbook 提供了非常棒的在线编辑功能, 所以想贡献的同学可以�
 
 ### 许可证
 
-本作品采用 Apache License 2.0 国际许可协议 进行许可. 传播此文档时请注意遵循以上许可协议. 关于本许可证的更多详情可参考 http://www.apache.org/licenses/LICENSE-2.0
+本作品采用 Apache License 2.0 国际许可协议 进行许可. 传播此文档时请注意遵循以上许可协议. 关于本许可证的更多详情可参考 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ---
 
 ### 贡献者列表
 
-成员 | 联系方式 | Github
-:------|:------|:------
-ityouknow| ityouknow@126.com | [Github](https://github.com/ityouknow)
+| 成员 | 联系方式 | Github |
+| :--- | :--- | :--- |
+| ityouknow | ityouknow@126.com | [Github](https://github.com/ityouknow) |
+
 
 
