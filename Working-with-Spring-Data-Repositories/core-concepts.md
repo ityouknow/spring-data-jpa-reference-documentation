@@ -26,21 +26,21 @@ public interface CrudRepository<T, ID extends Serializable>
 }
 ```
 
-\(1\) 保存指定的泛型的实体。
+\(1\) 保存指定的实体。
 
-\(2\) 返回的实体被给定的id。
+\(2\) 返回指定id的实体。
 
 \(3\) 返回所有实体。
 
-\(4\) 返回的实体的数量。
+\(4\) 返回实体的数量。
 
 \(5\) 删除给定的实体。
 
-\(6\) 表示一个实体是否与给定id的存在。
+\(6\) 表明一个指定id的实体是否存在。
 
 > 我们还提供持久性特定于技术的抽象如: `JpaRepository`或 `MongoRepository`. 这些接口继承于`CrudRepository`，实现了特定的一些功能
 
-`CrudRepository`有一个`PagingAndSortingRepository` 抽象,增加了额外的方法来缓解分页的访问实体:
+`CrudRepository`有一个`PagingAndSortingRepository` 抽象,增加了额外的方法来简化对实体的分页访问:
 
 例4： PagingAndSortingRepository
 
@@ -54,14 +54,14 @@ public interface PagingAndSortingRepository<T, ID extends Serializable>
 }
 ```
 
-进入用户类别的第二页，可以像这样来分页
+进入`用户类别`的第二页（每一页的条目是20），可以像这样来分页
 
 ```java
 PagingAndSortingRepository<User, Long> repository = // … get access to a bean
 Page<User> users = repository.findAll(new PageRequest(1, 20));
 ```
 
-除了查询方法还有查询并删除或者查询并统计
+除了查询方法外，还有统计查询和删除查询。
 
 例5 查询并统计
 
