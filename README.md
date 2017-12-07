@@ -12,7 +12,7 @@
 
 * 我们会开放权限给每一个加入的伙伴 \(翻译或者校对\)，请提前邮箱联系 ityouknow@126.com
 
-* 欢迎大家加入JPA翻译社QQ群，群号是：567323266
+* 欢迎大家加入JPA翻译社QQ群，群号是：__567323266__
 
 * 建议使用[GitBook Editor](https://www.gitbook.com/editor)编辑
 
