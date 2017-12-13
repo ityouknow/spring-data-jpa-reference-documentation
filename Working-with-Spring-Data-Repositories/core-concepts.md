@@ -1,4 +1,4 @@
-### 4.1核心概念
+### 3.1. 核心概念
 
 Spring Data库的核心接口是`Repository`。它使用domain类去管理，domain类中的id类型作为类型参数。这个接口主要作为一个标记接口，依靠具体的类型运作并帮助您发现接口，`CrudRepository` 提供丰富的CRUD功能去管理实体类。
 
@@ -26,9 +26,9 @@ public interface CrudRepository<T, ID extends Serializable>
 }
 ```
 
-\(1\) 保存指定的实体。
+\(1\) 保存给定的实体。
 
-\(2\) 返回指定id的实体。
+\(2\) 返回给定id的实体。
 
 \(3\) 返回所有实体。
 
@@ -54,13 +54,12 @@ public interface PagingAndSortingRepository<T, ID extends Serializable>
 }
 ```
 
-进入`用户类别`的第二页（每一页的条目是20），可以像这样来分页
+进入`用户类别`的第二页（每一页的条目是20），可以照下面这样来分页
 
 ```java
 PagingAndSortingRepository<User, Long> repository = // … get access to a bean
 Page<User> users = repository.findAll(new PageRequest(1, 20));
 ```
-
 除了查询方法外，还有统计查询和删除查询。
 
 例5 查询并统计

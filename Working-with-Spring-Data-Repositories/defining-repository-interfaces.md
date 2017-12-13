@@ -1,12 +1,12 @@
-### 4.3 定义repository的接口
+### 3.3. 定义repository的接口
 
-首先需要定义实体类的接口，接口必须继承repository并且输入实体类型和ID类型，如果需要用到CRUD方法，可以使用`CrudRepository`来替代`Repository`.
+首先需要定义实体类的接口，接口必须继承repository并且输入实体类型和ID类型，如果需要用到CRUD方法，可以使用`CrudRepository`来替代`Repository`。
 
-#### 4.3.1 自定义接口
+#### 3.3.1. 自定义接口
 
-通常,您的存储库接口将会扩展`Repository`, `CrudRepository`或`PagingAndSortingRepository`。 另外,如果你不想继承Spring Data接口,还可以注释库接口`@RepositoryDefinition`。 扩展`CrudRepository`公开了一套完整的方法来操作您的实体。 如果你喜欢选择调用方法,简单地复制你想要的曝光`CrudRepository`到你的repository。
+通常,您的存储库接口将会扩展`Repository`, `CrudRepository`或`PagingAndSortingRepository`。 另外,如果你不想继承Spring Data接口,还可以注释库接口`@RepositoryDefinition`。 扩展`CrudRepository`公开了一套完整的方法来操作您的实体。 如果你喜欢选择调用方法,简单地从`CrudRepository`中复制你想要的方法到你的repository。
 
-> 这允许您定义自己的抽象上的弹性提供数据存储库的功能。
+> 这允许您在已有的Spring Data存储库功能的基础上弹性地定义自己的抽象。
 
 例7.有选择地公开CRUD方法
 
@@ -28,7 +28,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 > 注意，如果中间的repository接口添加了`@NoRepositoryBean`注解，确认你所有的repository都添加了这个注解这时候spring Data 讲会不会创建实例。
 
-#### 4.3.2. 使用Spring Data多模块来创建Repositories
+#### 3.3.2. 使用Spring Data多模块来创建Repositories
 
 使用唯一的Spring Data模块在应用中是非常简单，但有时候我们需要多的Spring Data模块，比如：需要定义个Repository去区分两种不同的持久化技术，如果在class path中发现多个Repository时，spring data会进行严格的配置限制，确保每个repository或者实体决定绑定那个Spring Data模块：
 

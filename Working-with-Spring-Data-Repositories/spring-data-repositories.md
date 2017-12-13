@@ -1,6 +1,6 @@
-## 第四章 使用Spring Data Repositories
+## 第三章 使用Spring Data Repositories
 
-Spring Data Repositories的目的是使用很少的代码来实现各种持久层的数据库访问。
+使用Spring Data Repository可极大地简化为了实现各种持久层的数据库访问而写的样板代码量。
 
 > Spring数据存储库文件和你的module层
 >
