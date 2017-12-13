@@ -27,7 +27,11 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 > 注意，如果中间的repository接口添加了`@NoRepositoryBean`注解，确认你所有的repository都添加了这个注解，这时候spring Data在运行时将不会创建实例。
 
-#### 3.3.2. 使用Spring Data多模块来创建Repositories
+#### 3.3.2. 库方法对Null的处理
+
+在Spring Data 2.0中，库的CRUD方法使用Java 8的Optional返回一个独立的合计实例，表明一个值可能为null
+
+#### 3.3.3. 使用Spring Data多模块来创建Repositories
 
 使用唯一的Spring Data模块在应用中是非常简单，但有时候我们需要多的Spring Data模块，比如：需要定义个Repository去区分两种不同的持久化技术，如果在class path中发现多个Repository时，spring data会进行严格的配置限制，确保每个repository或者实体决定绑定那个Spring Data模块：
 
