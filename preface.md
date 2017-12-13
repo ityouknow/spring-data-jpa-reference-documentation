@@ -1,6 +1,6 @@
 前言
 
-## 1. 项目信息
+## 项目信息
 
 - 版本控制 - http://github.com/spring-projects/spring-data-jpa
 

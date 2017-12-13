@@ -1,4 +1,4 @@
-## 第三章 项目依赖
+## 第二章 项目依赖
 
 由于spring data依赖于很多不同的组件,其中大部分都有不同的版本号，找到兼容的最简单方式就是利用我们定义的bom模版，在maven项目中，你可以在pom文件中定义这样的片段`<dependencyManagement />`
 
@@ -45,11 +45,11 @@
 <dependencies>
 ```
 
-### 3.1 使用Spring Boot管理依赖
+### 2.1 使用Spring Boot管理依赖
 
 Spring boot 已经选择了最新的版本，如果你想更新到最新的版本，只需配置`spring-data-releasetrain.version` 选择不同的版本来使用即可。
 
-### 3.2 Spring 框架
+### 2.2 Spring 框架
 
 当前的Spring Data模版需要依赖Spring框架5.0.1发布版或者更高，也可以使用旧版中修复了bug的版本，但是还是推荐使用最新的版本。
 
