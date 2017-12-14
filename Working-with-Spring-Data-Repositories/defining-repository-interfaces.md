@@ -27,9 +27,15 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 
 > 注意，如果中间的repository接口添加了`@NoRepositoryBean`注解，确认你所有的repository都添加了这个注解，这时候spring Data在运行时将不会创建实例。
 
-#### 3.3.2. 库方法对Null的处理
+#### 3.3.2. Repository方法对Null的处理
 
-在Spring Data 2.0中，库的CRUD方法使用Java 8的Optional返回一个独立的合计实例，表明一个值可能为null
+在Spring Data 2.0中，Repository的CRUD方法使用Java 8的Optional返回一个独立的合计实例，表明一个值可能缺失。此外，Spring Data还支持查询方法返回其他包装类:
+* `com.google.common.base.Optional`
+* `scala.Option`
+* `io.vavr.control.Option`
+* `javaslang.control.Option`(deprecated as Javaslang is deprecated)
+
+查询方法也可不返回任何包装类，
 
 #### 3.3.3. 使用Spring Data多模块来创建Repositories
 
