@@ -35,7 +35,11 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 * `io.vavr.control.Option`
 * `javaslang.control.Option`(deprecated as Javaslang is deprecated)
 
-查询方法也可不返回任何包装类，
+查询方法也可不返回任何包装类，缺失的查询结果将返回null。返回集合，可选集合，包装类和流的Repository方法将返回相应的空表示而不返回null。详情请见[Repository query return types](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repository-query-return-types)
+
+**Nullability注解**
+
+你可以使用
 
 #### 3.3.3. 使用Spring Data多模块来创建Repositories
 
