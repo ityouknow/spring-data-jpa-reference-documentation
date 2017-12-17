@@ -62,7 +62,15 @@ class ApplicationConfiguration {
 
 #### 3.5.3. 独立使用
 
-您还可以使用Spring容器之外的repository基础架构。
+您还可以使用Spring容器之外的repository基础架构，例如CDI环境。你仍然需要在classpath中添加一些Spring库，但是通常来说你可以在代码中设置repositories。
+提供repository支持的Spring Data模块提供了一个RepositoryFactory（持久化的技术特定），使用如下所示。
+
+例 24. repository工厂的独立使用
+
+```java
+RepositoryFactorySupport factory = … // Instantiate factory here
+UserRepository repository = factory.getRepository(UserRepository.class);
+```
 
 
 
