@@ -38,10 +38,10 @@ Gitbook 提供了非常棒的在线编辑功能, 所以想贡献的同学可以�
 
 | 成员 | 联系方式 | Github |
 | :--- | :--- | :--- |
-| ityouknow | ityouknow@126.com | [Github](https://github.com/ityouknow) |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| ityouknow | ityouknow@126.com | [https://github.com/ityouknow ](https://github.com/ityouknow) |
+| 北方素素 | beifangsusu@189.cn | [https://github.com/bfss](https://github.com/bfss) |
+| 可燃冰 | ken.kong@outlook.com | 暂无 |
+| dzzxjl | dzzxjl@126.com | [https://github.com/dzzxjl](https://github.com/dzzxjl) |
 
 
 
