@@ -45,5 +45,6 @@ Gitbook 提供了非常棒的在线编辑功能, 所以想贡献的同学可以�
 | xiangflight | xiangflight@foxmail.com | [https://github.com/xiangflight](https://github.com/xiangflight) |
 | guoxifeng | 13193755630@163.com | [https://github.com/guoxifeng](https://github.com/guoxifeng) |
 | 我的天空你的城 | cytxiamen@163.com | [https://gitee.com/domainchen](https://gitee.com/domainchen)  |
+| Chuck | 986022405@qq.com | [https://github.com/qiankaiyu](https://github.com/qiankaiyu)  |
 
 
