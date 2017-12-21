@@ -12,7 +12,6 @@
   * [3.3 定义repository的接口](Working-with-Spring-Data-Repositories/defining-repository-interfaces.md)
   * [3.4 定义查询方法](Working-with-Spring-Data-Repositories/defining-query-methods.md)
   * [3.5 创建repository实例](Working-with-Spring-Data-Repositories/creating-repository-instances.md)
-  * [3.6 Spring Data repositories的自定义实现](Working-with-Spring-Data-Repositories/custom-implementations-for-Spring-Data-repositories.md)
-
- 
+  * [3.6 Spring Data repositories的自定义实现](Working-with-Spring-Data-Repositories/3.6/3.6 custom-implementations-for-Spring-Data-repositories-by_异想天开.md)
+    * [3.6.1 定制Repositories](Working-with-Spring-Data-Repositories/3.6/3_6_1-by_xifeng.md)
 
