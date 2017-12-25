@@ -171,3 +171,26 @@ String showUsers(Model model,
 
 Spring HATEOAS附带一个表示模型类`PagedResources`来允许使用必要的`Page`元数据丰富`Page`实例的内容，同时也使用链接让客户端在页面间轻松导航。 将`Page`转换为`PagedResources`这一工作是由实现了Spring HATEOAS 的`ResourceAssembler`接口的`PagedResourcesAssembler`完成的。
 
+例47. 声明一个Jackson库填充器
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:repository="http://www.springframework.org/schema/data/repository"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/repository
+    http://www.springframework.org/schema/data/repository/spring-repository.xsd">
+
+  <repository:jackson2-populator locations="classpath:data.json" />
+</beans>
+```
+  
+这个声明会让Jackson对象封装器读取并反序列化data.json文件。
+
+通过检查JSON文档的`_class`属性来确定解组后的JSON对象的类型。
+
+
+
+
+
