@@ -1,6 +1,3 @@
-#
-附录
-
 ## 附录A：命名空间参考
 
 ### **&lt;repositories /&gt;元素** {#populator.namespace-dao-config}
@@ -16,17 +13,3 @@
 | query-lookup-strategy | 确定要用于创建查找器[查询的策略](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-lookup-strategies)。详细信息请参阅查询查询策略。默认为`create-if-not-found`。 |
 | named-queries-location | 定义查找包含外部定义的查询的属性文件的位置。 |
 | consider-nested-repositories | 控制是否应考虑嵌套存储库接口定义。默认为`false`。 |
-
-## 附录B：Poppers命名空间参考 {#populator.namespace-reference}
-
-### &lt;populator /&gt;元素 {#namespace-dao-config}
-
-该`<populator />`元素允许通过Spring Data存储库基础结构填充数据存储
-
-表9.属性
-
-| **名称** | **描述** |
-| :--- | :--- |
-| locations | 在哪里可以找到从存储库中读取对象的文件。 |
-
-
