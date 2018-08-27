@@ -42,7 +42,7 @@ Gitbook 提供了非常棒的在线编辑功能, 所以想贡献的同学可以�
 | 北方素素 | beifangsusu@189.cn | [https://github.com/bfss](https://github.com/bfss) |
 | 可燃冰 | ken.kong@outlook.com | [https://github.com/ken-kong](https://github.com/ken-kong)|
 | dzzxjl | dzzxjl@126.com | [https://github.com/dzzxjl](https://github.com/dzzxjl) |
-| xiangflight | xiangflight@foxmail.com | [https://github.com/xiangflight](https://github.com/xiangflight) |
+| xiangflight | xiangflight@foxmail.com | [https://github.com/xiangflight](https://github.com/xiangflight) 
 | guoxifeng | 13193755630@163.com | [https://github.com/guoxifeng](https://github.com/guoxifeng) |
 | 我的天空你的城 | cytxiamen@163.com | [https://gitee.com/domainchen](https://gitee.com/domainchen)  |
 | Chuck | 986022405@qq.com | [https://github.com/qiankaiyu](https://github.com/qiankaiyu)  |
