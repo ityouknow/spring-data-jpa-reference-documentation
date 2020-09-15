@@ -25,7 +25,7 @@ interface UserRepository extends MyBaseRepository<User, Long> {
 ```
 第一步你定义了一个公共基础的接口提供了`findById(…)`和`save(...)`方法,这些方法将会引入到你选择的spring Data的实现类中，例如JPA：`SimpleJpaRepository`,因为他们匹配`CrudRepository`的方法签名，所以`UserRepository`将会具备save Users和根据ID查询的功能，当然也具备`findByEmailAddress`的功能。
 
-> 注意，如果中间的repository接口添加了`@NoRepositoryBean`注解，确认你所有的repository都添加了这个注解，这时候spring Data在运行时将不会创建实例。
+> 注意，中间的repository接口添加了`@NoRepositoryBean`注解。确保为所有不需要Spring Data运行时创建实例的repository添加该注解。
 
 #### 3.3.2. Repository方法对Null的处理
 
